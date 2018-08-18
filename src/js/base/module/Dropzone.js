@@ -89,13 +89,7 @@ export default class Dropzone {
 
       if (dataTransfer && dataTransfer.files && dataTransfer.files.length) {
         this.$editable.focus();
-        const data = dataTransfer.files;
-        if (this.options.callbacks.onImageUpload) {
-          this.context.triggerEvent('image.upload', data);
-        } else {
-          // else insert Image as dataURL
-          this.context.invoke('editor.insertImagesAsDataURL', data);
-        }
+        this.context.invoke('editor.insertImagesOrCallback', dataTransfer.files);
       } else {
         $.each(dataTransfer.types, (idx, type) => {
           const content = dataTransfer.getData(type);

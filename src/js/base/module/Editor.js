@@ -632,6 +632,15 @@ export default class Editor {
     });
   }
 
+  insertImagesOrCallback(files) {
+    if (this.options.callbacks.onImageUpload) {
+      this.context.triggerEvent('image.upload', files);
+    } else {
+      // else insert Image as dataURL
+      this.context.invoke('editor.insertImagesAsDataURL', files);
+    }
+  }
+
   /**
    * return selected plain text
    * @return {String} text
