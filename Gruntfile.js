@@ -244,6 +244,11 @@ module.exports = function(grunt) {
           { src: 'lang/*', dest: 'dist/' },
           { expand: true, cwd: 'src/icons/dist/font/', src: ['**', '!*.html'], dest: 'dist/font/' }
         ]
+      },
+      kian: {
+        files: [
+          { expand: true, cwd: 'dist/', src: ['**', '!*.zip'], dest: '../frontend/public/summernote/' }
+        ]
       }
     },
     webfont: {
@@ -286,7 +291,8 @@ module.exports = function(grunt) {
   grunt.registerTask('dist', [
     'clean:dist',
     'build', 'webfont', 'lint', 'karma:dist',
-    'copy:dist', 'uglify', 'recess', 'compress'
+    'copy:dist', 'uglify', 'recess', 'compress',
+    'copy:kian'
   ]);
 
   // default: server
