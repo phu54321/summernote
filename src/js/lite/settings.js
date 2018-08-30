@@ -5,23 +5,23 @@ import Editor from '../base/module/Editor';
 import Clipboard from '../base/module/Clipboard';
 import Dropzone from '../base/module/Dropzone';
 import Codeview from '../base/module/Codeview';
-import Statusbar from '../base/module/Statusbar';
-import Fullscreen from '../base/module/Fullscreen';
-import Handle from '../base/module/Handle';
+// import Statusbar from '../base/module/Statusbar';
+// import Fullscreen from '../base/module/Fullscreen';
+// import Handle from '../base/module/Handle';
 import AutoLink from '../base/module/AutoLink';
 import AutoSync from '../base/module/AutoSync';
 import Placeholder from '../base/module/Placeholder';
 import Buttons from '../base/module/Buttons';
 import Toolbar from '../base/module/Toolbar';
-import LinkDialog from '../base/module/LinkDialog';
-import LinkPopover from '../base/module/LinkPopover';
-import ImageDialog from '../base/module/ImageDialog';
+// import LinkDialog from '../base/module/LinkDialog';
+// import LinkPopover from '../base/module/LinkPopover';
+// import ImageDialog from '../base/module/ImageDialog';
 import ImagePopover from '../base/module/ImagePopover';
 import TablePopover from '../base/module/TablePopover';
-import VideoDialog from '../base/module/VideoDialog';
-import HelpDialog from '../base/module/HelpDialog';
-import AirPopover from '../base/module/AirPopover';
-import HintPopover from '../base/module/HintPopover';
+// import VideoDialog from '../base/module/VideoDialog';
+// import HelpDialog from '../base/module/HelpDialog';
+// import AirPopover from '../base/module/AirPopover';
+// import HintPopover from '../base/module/HintPopover';
 
 $.summernote = $.extend($.summernote, {
   version: '@@VERSION@@',
@@ -35,25 +35,25 @@ $.summernote = $.extend($.summernote, {
       'clipboard': Clipboard,
       'dropzone': Dropzone,
       'codeview': Codeview,
-      'statusbar': Statusbar,
-      'fullscreen': Fullscreen,
-      'handle': Handle,
+      // 'statusbar': Statusbar,
+      // 'fullscreen': Fullscreen,
+      // 'handle': Handle,
       // FIXME: HintPopover must be front of autolink
       //  - Script error about range when Enter key is pressed on hint popover
-      'hintPopover': HintPopover,
+      // 'hintPopover': HintPopover,
       'autoLink': AutoLink,
       'autoSync': AutoSync,
       'placeholder': Placeholder,
       'buttons': Buttons,
       'toolbar': Toolbar,
-      'linkDialog': LinkDialog,
-      'linkPopover': LinkPopover,
-      'imageDialog': ImageDialog,
+      // 'linkDialog': LinkDialog,
+      // 'linkPopover': LinkPopover,
+      // 'imageDialog': ImageDialog,
       'imagePopover': ImagePopover,
-      'tablePopover': TablePopover,
-      'videoDialog': VideoDialog,
-      'helpDialog': HelpDialog,
-      'airPopover': AirPopover
+      'tablePopover': TablePopover
+      // 'videoDialog': VideoDialog,
+      // 'helpDialog': HelpDialog,
+      // 'airPopover': AirPopover
     },
 
     buttons: {},
