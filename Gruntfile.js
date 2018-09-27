@@ -248,7 +248,7 @@ module.exports = function(grunt) {
       },
       kian: {
         files: [
-          { expand: true, cwd: 'dist/', src: ['**', '!*.zip'], dest: '../frontend/public/summernote/' }
+          { expand: true, cwd: 'dist/', src: ['**', '!*.zip'], dest: '../kian/frontend/public/summernote/' }
         ]
       }
     },
